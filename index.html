@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .contenedor-flexible{
+            background-color: gray;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            height: 100vh;
+            align-content: flex-start;
+
+        }
+        .contenedor-flexible2{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .elemento-flexible{
+            font-size: 5rem;
+            color: rgb(255, 255, 255);
+            
+        }
+        .opaco{
+            background-color: rgba(0,0,0,0.3);
+            width: 100%;
+            height: 100%;
+        }
+        .uno{
+            background-color: rgb(230, 113, 107);
+            flex-basis: 50%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            height: 100vh;
+            background-image: url(hamburguesa.jpg);
+        }
+        .dos{
+            background-color: rgba(21, 142, 142, 0.573);
+            flex-basis: 50vh;
+            flex-grow: 1;
+            flex-shrink: 1;
+            height: 50vh;
+            background-image: url(papas.jpg);
+            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+            background-position: center;
+        }
+        .tres{
+            background-color: rgb(163, 130, 218);
+            flex-basis: 50vh;
+            flex-grow: 1;
+            flex-shrink: 1;
+            height: 50vh;
+            background-image: url(h.jpg);
+            background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor-flexible">
+        <div class="elemento-flexible uno">
+            <div class="opaco"></div>
+        </div>
+        <div class="contenedor-flexible2">
+            <div class="elemento-flexible dos">2</div>
+            <div class="elemento-flexible tres">3</div>
+        </div>
+    </div>
+</body>
+</html>
